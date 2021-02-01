@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    width: 800px;
+    height: 100vh;
+  }
+  body{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+  }
+
+  main{
+      width: 100vw;
+      height: 100vh;
+  display: flex;
+  align-items: center;
+    }
+    fieldset{
+        width: 100%;
+        text-align: center;
+
+    }
+    form{
+        margin: auto;
+        width: 40vw;
+        height: 50vh;
+
+    }
+    h1{
+        text-align: center;
+    }
+    legend{
+        margin-bottom: 6px;
+    }
+    .sub{
+        margin-bottom: 8px;
+    }

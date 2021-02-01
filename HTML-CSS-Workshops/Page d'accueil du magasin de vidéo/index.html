@@ -1,96 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>store</title>
-</head>
-<body>
-    <header class="container">
-        <img src="logo.jpg" alt="" class="logo">
-        <ul>
-            <li><a href="#">Videos to rent</a></li>
-            <li><a href="#">Videos to buy</a></li>
-            <li><a href="#">Used DVDs</a></li>
-            <li><a href="#">Offers</a></li>
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Page d'acceuil du magasin de video</title>
+    <link rel="stylesheet" href="css/style.css" >
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="image/logo.jpg" alt="" >
+        <ul class="nav_items">
+          <li>Videos to rent</li>
+          <li>Videos to buy</li>
+          <li>Used DVD's</li>
+          <li>Offers</li>
         </ul>
+      </nav>
+      <div class="links">
+        <ul class="nav_items_second">
+          <li> <a class="link first" href="#">Home</a> </li>
+          <li> <a class="link" href="#">Used DVD's</a> </li>          
+          <li> <a class="link" href="#">Less than 10£</a> </li> 
+        </ul>
+      </div>
     </header>
-    <nav class="navbar">
-        <ol>
-            <li><a href="">Home</a></li>
-            <li><a href="">/</a></li>
-            <li><a href="">Used DVDs</a></li>
-            <li><a href="">/</a></li>
-            <li><a href="">Less than £10</a></li>
-        </ol>
-    </nav>
-    <section class="main">
-        <h1>
-            Videos less than £10
-        </h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, accusantium eos.<br> Tempore officiis debitis natus soluta iure incidunt suscipit</p>
-    </section>
-
-    <footer class="cards">
-    <section class="text-cards">
-        <img src="gamer.png" >
-        <h3>Video title 1</h3>
-        <p class="lin1">RRP: 22.99£</p>
-        <p class="lin2">Price you pay<u> <strong> 11.99£</strong></u> </p>
-        <p class="lin3">Your saving 11£</p>
-    </section>
-
-    <section class="text-cards">
-        <img src="coder.jpg" >
-        <h3>Video title 1</h3>
-        <p class="lin1">RRP: 40.99£</p>
-        <p class="lin2">Price you pay<u> <strong> 11.99£</strong></u> </p>
-        <p class="lin3">Your saving 11£</p>
-    </section>
-
-
-    <section class="text-cards">
-        <img src="img.jpg" >
-        <h3>Video title 1</h3>
-        <p class="lin1">RRP: 22.99£</p>
-        <p class="lin2">Price you pay<u> <strong> 11.99£</strong></u> </p>
-        <p class="lin3">Your saving 11£</p>
-    </section>
-
-
-    <section class="text-cards">
-        <img src="ican.jpg" >
-        <h3>Video title 1</h3>
-        <p class="lin1">RRP: 22.99£</p>
-        <p class="lin2">Price you pay<u> <strong> 11.99£</strong></u> </p>
-        <p class="lin3">Your saving 11£</p>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </footer>
-</body>
+    <main>
+      <div>
+        <h1>Video less than 10£</h1>
+        <p class="intro">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
+          ut similique amet dolorum minus? Atque perspiciatis earum eligendi
+          consectetur aperiam.
+        </p>
+      </div>
+      <div class="article">
+        <div class="card">
+            <img class="img-1" src="image/coder.jpg" alt="">
+            <h1 class="card_title">Video title 1</h1>
+            <p class="lastPrice">RRP: £18.99</p>
+            <p class="price">Price you pay <span> £9.99 </span></p>
+            <p class="savingPrice">Your saving £9</p>
+        </div>
+        <div class="card">
+            <img class="img-1" src="image/gamer.png" alt="">
+            <h1 class="card_title">Video title 2</h1>
+            <p class="lastPrice">RRP: £18.99</p>
+            <p class="price">Price you pay <span> £9.99 </span></p>
+            <p class="savingPrice">Your saving £9</p>
+        </div>
+        <div class="card">
+            <img class="img-1" src="image/ican.jpg" alt="">
+            <h1 class="card_title">Video title 3</h1>
+            <p class="lastPrice">RRP:£18.99</p>
+            <p class="price">Price you pay <span> £9.99 </span></p>
+            <p class="savingPrice">Your saving £9</p>
+        </div>
+        <div class="card">
+            <img class="img-1" src="image/img.jpg" alt="">
+            <h1 class="card_title">Video title 4</h1>
+            <p class="lastPrice">RRP: £18.99</p>
+            <p class="price">Price you pay <span> £9.99 </span></p>
+            <p class="savingPrice">Your saving £9</p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

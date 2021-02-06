@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background: lightblue url("pexels-jess-vide-4319847.jpg") no-repeat fixed center;
+    justify-content: space-between;
+    background-color: black;
+  }
+
+  .burgerlist ul{  
+    margin-top: 249px;
+    list-style: none;    
+  }
+
+  li.second{
+
+    margin: 53px 0px;
+    color: #13366D;
+  }
+  
+  .burgerlist ul li{
+
+    font-size: 24px;
+    color: #13366D;
+  }
+  header{
+
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .closebutton{
+
+    font-size: 46px;
+   
+  }
+
+ 

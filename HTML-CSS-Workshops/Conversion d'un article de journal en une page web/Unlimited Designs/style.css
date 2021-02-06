@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "karla";
+}
+body{
+    width: 80%;
+    margin: 20px auto;
+    background-color:#FBF7EE;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: #FBF7EE;
+
+}
+.navitems{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    align-items: center;
+    margin: auto 0;
+    margin: 5px;
+    font-weight: bold;
+}
+.navitemssecond{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    list-style: none;
+    padding: 0 10px;
+    color: black;
+}
+.fbutton{
+    background-color: #0B48A8;
+    color: white;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 3px;
+}
+
+.fbutton:hover{
+
+    background: #FFF3D9;
+    color: #0B48A8;
+}
+.titre{
+    margin-bottom: 60px;
+    font-size: 64px;
+    color: #13366D;
+}
+.element{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 40px;
+}
+.para{
+    margin-bottom: 60px;
+    color: #A2A2A2;
+    max-width: 550px;
+}
+.sect{
+    margin-right: 13px; 
+}
+.submit{
+    background-color: #0B48A8;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+.submit:hover{
+
+    background: #FFF3D9;
+    color: #0B48A8;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    outline: 1px solid #d4d4d4;
+    padding-left: 10px;
+}
+.check{
+    margin-top: 20px;
+    color: #A2A2A2;
+}
+
+.card{
+    width: 322px;
+    height: 318px;
+    border: #A2A2A2 2px solid;
+    padding: 16px;
+    background-color: #ffffff;
+    
+}
+.h1{
+    margin-bottom: 20px;
+    background-color: #ffffff;
+   
+}
+.p{
+   color: #A2A2A2;
+   background-color: #ffffff;
+}
+
+span{
+    color: black;
+    background-color: #ffffff;
+}
+
+.checkim2{
+    margin-left: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    flex-flow: wrap;
+}
+    
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.texts{
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.titre2{
+    font-size: 30px;
+    color: #13366D;
+    margin: auto;
+}
+
+.para2{
+    
+    margin: 30px 0px;
+    color: #A2A2A2;
+}
+    
+.felem{
+    width: 322px;
+    height: 449px;
+    border: #A2A2A2 2px solid;
+    padding: 16px;
+    background-color: #FFF3D9;
+    
+}
+.elements{
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+
+}
+
+
+.selem{
+
+    width: 322px;
+    height: 336px;
+    border: #A2A2A2 2px solid;
+   
+}
+
+.startup p{
+
+    color: white;
+    background: #13366D;
+    width: 85px;;
+    border-radius: 19px;
+    padding: 11px;
+    align-items: center;
+
+}
+.fbutton{
+    background-color: #0B48A8;
+    color: white;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 3px;
+}
+
+.fbutton2{
+    background-color: #0B48A8;
+    color: white;
+    padding: 10px;
+    margin-left: 2px;
+    border-radius: 3px;
+    margin: 15px;
+    width: 257px;
+}
+.fbutton2:hover{
+
+    background: #FFF3D9;
+    color: #0B48A8;
+}
+
+.listelem ul li{
+
+    list-style: none;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.price1{
+
+    font-size: 36px;
+}
+
+.price2{
+
+    font-size: 36px;
+    margin-top: 49px;
+}
+strong{
+
+    color: #8D8D8D;
+    font-size: 25px;
+}
+
+.contact{
+
+    margin-top: 183px;
+    font-size: 33px;
+    font-weight: bolder;
+}
+
+.elemP p{
+
+  margin-top: 16px;
+}
+.selem{
+
+   padding: 15px; 
+}
+
+.limg{
+
+    margin: 25px auto;
+}
+
+footer p{
+
+    margin-top: 70px;
+}
+
+.burger{
+
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .img1 {
+        display: none;
+    }
+
+    .navbar{
+        display: block;
+    }
+
+
+
+    .logo{
+
+       margin-left: 30%;
+    }
+   .selem {
+       margin-left: 9px;
+   }
+   .card{
+
+       margin-top: 20px
+       ;
+   }
+
+   .felem{
+
+    margin-top: 20px;
+}
+
+.selem{
+
+    margin-top: 20px;
+}
+
+footer p{
+    margin-left: 37px;
+}
+ 
+.titre2 h1{
+   font-size: 40px;
+}
+.startup{
+    margin-left: 35%;
+}
+.submit{
+    margin-left: 32%;
+    margin-top: 20px;
+}
+.checkim2{
+    margin-left: 40px;
+}
+.checkim1{
+    margin-left: 40px;
+}
+
+.titre{
+
+    font-size: 48px;
+   margin-left: 30px;
+}
+
+.para{
+
+    margin-top:-23px;
+}
+
+.burger{
+
+    display: flex;
+    width: 30px;
+    float: right;
+}
+
+.navbar ol li a{
+
+    display: none;
+}
+
+
+ul li a{
+
+    margin-left: 10px;
+}
+.navitemssecond{
+    display: flex;
+    justify-content: center;
+}
+}

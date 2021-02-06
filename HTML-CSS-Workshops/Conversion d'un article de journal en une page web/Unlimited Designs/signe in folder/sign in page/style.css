@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+
+    display:flex;
+    flex-direction: column;
+    width: 291px; 
+}
+.psw{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container{
+
+    align-items: center;
+    background-color: white;
+    margin: 501px;
+    width: 72%;
+    padding: 11%;
+    border-radius: 5%;
+    border-style: double;
+}
+
+body{
+
+    display: flex;
+    background-image: url(BG\ Hero.png);
+    background-size: 640px;
+    
+
+}
+.logo{
+
+    margin-bottom: 72px;
+    width: 138px;
+}

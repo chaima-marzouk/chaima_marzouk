@@ -1,0 +1,139 @@
+*{
+
+   padding: 0%;
+   margin: 0%;
+   box-sizing: border-box;
+
+}
+
+body{
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 69px;
+}
+
+.barre li{
+    color: white;
+    list-style: none;
+    padding: 41px;
+    
+}
+.barre{
+
+    display: flex;
+    margin-left: 58em;
+}
+
+.logo{
+
+    width: 202px;
+    height: 84px;
+    margin: 29px;
+}
+
+div.bar{
+
+    display: flex;
+}
+
+button{
+
+    background-color: #F275A7;
+    padding: 11px;
+    width: 115px;
+    margin-top: -9px;
+    font-family: bold;
+}
+img{
+    margin-left: 144px;
+    width: 1546px;
+}
+
+h3{
+    color: #F275A7;
+    font-size: 40px;
+    margin-left: 218px;
+}
+
+h1{
+    margin-left: 218px; 
+    font-size: 80px;
+    color: white;
+}
+
+h5{
+    margin-left: 218px;
+    font-size: 21px;
+    color: white;
+    margin-top: 10px;
+}
+
+.phone{
+
+    display: none;
+}
+.button li{
+
+    list-style: none;
+    padding: 41px;
+}
+
+
+.instagram{
+    width: 20px;
+    color: white;
+}
+
+.sidebarre{
+    width: 33px;
+    height: 91px;
+    background-color: #F275A7;
+}
+
+.instaagram{
+    margin-left: 12px;
+    width: 19px;
+}
+
+.twitter{
+    margin-left: 12px;
+    width: 19px;
+}
+
+.facebook{
+    margin-left: 12px;
+    width: 19px;
+}
+
+
+
+@media(MAX-width: 375px) {
+    /*for phone*/
+    
+    img{
+        margin-left: -28px;
+    }
+
+    .barre li{
+
+        display: none;
+    }
+     
+    h1{
+        font-size: 168px;
+    }
+
+    h5{
+        display: grid;
+        font-size: 48px;
+        font-size: 47px;
+    }
+    .logo{
+        width: 275px;
+        height: 138px;
+    }
+    
+}

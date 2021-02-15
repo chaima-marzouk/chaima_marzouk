@@ -9,18 +9,29 @@
 body{
     background-color: black;
 }
+
+
+/*header*/
 header{
     display: flex;
     justify-content: space-between;
     margin-right: 69px;
 }
 
-.barre li{
-    color: white;
+.barre li {
     list-style: none;
     padding: 41px;
     
 }
+.barre li a{
+    color: white;
+    text-decoration: none;
+}
+.barre li a:hover{
+    text-decoration: underline;
+    color:#F275A7; 
+}
+
 .barre{
 
     display: flex;
@@ -38,7 +49,10 @@ div.bar{
 
     display: flex;
 }
+/*header*/  
 
+
+/*header's button*/
 button{
 
     background-color: #F275A7;
@@ -47,6 +61,22 @@ button{
     margin-top: -9px;
     font-family: bold;
 }
+.button :hover{
+
+    color: #ffffff;
+}
+.button li{
+
+    list-style: none;
+    padding: 41px;
+}
+
+/*header's button*/
+
+
+
+
+/*second navigation barre*/
 img{
     margin-left: 144px;
     width: 1546px;
@@ -71,47 +101,81 @@ h5{
     margin-top: 10px;
 }
 
-.phone{
-
-    display: none;
-}
-.button li{
-
-    list-style: none;
-    padding: 41px;
-}
+/*second navigation barre*/
 
 
-.instagram{
-    width: 20px;
-    color: white;
-}
 
+
+/*side barre*/
 .sidebarre{
     width: 33px;
-    height: 91px;
-    background-color: #F275A7;
-}
-
-.instaagram{
-    margin-left: 12px;
-    width: 19px;
+    height: 100px;
+    background-color: #F275A7; 
 }
 
 .twitter{
-    margin-left: 12px;
+    margin-left: 9px;
     width: 19px;
+    margin-top:2px ;
+    margin-bottom: 2px;
 }
 
 .facebook{
-    margin-left: 12px;
+    margin-left: 9px;
     width: 19px;
 }
+.instagram{
+   width: 25px;
+   margin-left: 6px;
+   margin-top: 9px;
+}
+
+/*side barre*/
+
+
+/*about me*/
+.firstpart{
+
+    display: flex;
+    flex-direction: row;
+}
+.aboutme{
+    font-size: 35px;
+    margin-top: 123px;
+}
+p{
+    color:white;
+    margin-left: 218px; 
+    margin-top: 10px;
+}
+
+.maphoto{
+
+    width: 731px;
+    margin-top: 146px;
+    margin-left: 313px;
+}
+/*about me*/
 
 
 
-@media(MAX-width: 375px) {
-    /*for phone*/
+/*skills*/
+
+.skills{
+    
+    font-size: 35px;
+    margin-top: 123px;
+}
+
+/*skills*/
+
+
+
+
+
+
+@media(MAX-width: 375px) { /*for phone*/
+    
     
     img{
         margin-left: -28px;
@@ -127,7 +191,7 @@ h5{
     }
 
     h5{
-        display: grid;
+        
         font-size: 48px;
         font-size: 47px;
     }
@@ -135,5 +199,47 @@ h5{
         width: 275px;
         height: 138px;
     }
+
+    .aboutme {
+        font-size: 87px;
+    }
+
+    .maphoto{
+        width: 514px;
+    }
+    p {
+        font-size: 35px;
+    }
+    .button{
+        display: none;
+    }
     
+
+    .skills{
+        font-size: 87px;
+    }
+}
+
+
+
+
+@media(MAX-width: 768px) { /*Tablette*/
+
+    .skills{
+        font-size: 87px;
+    }
+
+    .aboutme {
+        font-size: 87px;
+    }
+
+    .barre li a{
+
+        font-size: 30px;
+    }
+
+    
+
+
+
 }

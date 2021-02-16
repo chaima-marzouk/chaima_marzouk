@@ -169,6 +169,29 @@ p{
 
 /*skills*/
 
+/*Cards*/
+.card1{
+
+    background-color: #ffffff;
+    WIDTH: 198px;
+    height: 264px;
+    margin-left: 234px;
+    margin-top: 50px;
+    border-radius: 35px;
+}
+}
+.h4{
+    color: #F275A7;
+    align-content: center;
+    margin-left: 20px;
+
+}
+.bac{
+    margin-left: 81px;
+    color: black;
+
+}
+
 
 
 
@@ -237,9 +260,4 @@ p{
 
         font-size: 30px;
     }
-
-    
-
-
-
 }

@@ -8,6 +8,7 @@
 
 body{
     background-color: black;
+    position: relative;
 }
 
 
@@ -60,6 +61,7 @@ button{
     width: 115px;
     margin-top: -9px;
     font-family: bold;
+    display: block;
 }
 .button :hover{
 
@@ -111,6 +113,9 @@ h5{
     width: 33px;
     height: 100px;
     background-color: #F275A7; 
+    position: fixed;
+    top: 50%;
+    
 }
 
 .twitter{
@@ -134,7 +139,7 @@ h5{
 
 
 /*about me*/
-.firstpart{
+#firstpart{
 
     display: flex;
     flex-direction: row;
@@ -160,37 +165,34 @@ p{
 
 
 /*skills*/
-
 .skills{
-    
     font-size: 35px;
     margin-top: 123px;
 }
 
+
 /*skills*/
 
+
+
+
 /*Cards*/
-.card1{
+.cards{
+    border: 2px solid;
+    border-color: white;
+    color: white;
+}
+.clicker {
+    width: 339px;
+    height: 468px;
+    border: 2px solid;
+    border-color: white;
+    outline: none;
+    cursor: pointer;
+    }
 
-    background-color: #ffffff;
-    WIDTH: 198px;
-    height: 264px;
-    margin-left: 234px;
-    margin-top: 50px;
-    border-radius: 35px;
-}
-}
-.h4{
-    color: #F275A7;
-    align-content: center;
-    margin-left: 20px;
+/*Cards*/
 
-}
-.bac{
-    margin-left: 81px;
-    color: black;
-
-}
 
 
 
@@ -260,4 +262,24 @@ p{
 
         font-size: 30px;
     }
+}
+
+
+
+
+
+
+.tapper{
+    width: 33.2ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: tapper 3s steps(35), blink .5s infinite;
+    border-right: 0px solid;
+}
+
+@keyframes tapper{
+    from {
+        width: 0ch;
+    }
+
 }

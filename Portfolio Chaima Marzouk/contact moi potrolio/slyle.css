@@ -9,6 +9,7 @@
  body{
      
     background-color: black;
+    font-family:"Poppins";
  }
  
  
@@ -22,10 +23,11 @@
  .barre li {
      list-style: none;
      padding: 54px;
+     border: black;
 
  }
  .barre li a{
-     color: white;
+     color: rgb(0, 0, 0);
      text-decoration: none;
  }
  .barre li a:hover{
@@ -117,6 +119,7 @@
          position: absolute;
          bottom: 0;
          width: 100%;
+         border: black;
 
      }
      p{

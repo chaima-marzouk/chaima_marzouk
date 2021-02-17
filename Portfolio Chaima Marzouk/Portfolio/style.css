@@ -199,6 +199,7 @@ p{
     align-items: center;
 }
 
+
 .clicker {
     width: 288px;
     height: 190px;
@@ -207,18 +208,15 @@ p{
     cursor: pointer;
     font-size: 170px;
     padding: 2px;
-    display: flex;
-    flex-direction: column;
+    
+   
     }
 
     .clicker:hover{
         color: #F89CC1;
         border: none;
     }
-    .card{
-        display: flex;
-        flex-direction: column;
-    }
+    
     
     .hiddendiv{
         display:none;
@@ -369,8 +367,8 @@ p{
         height: 138px;
     }
 
-    .aboutme {
-        font-size: 87px;
+    .tapper {
+        font-size: 85px;
     }
 
     .maphoto{
@@ -387,6 +385,12 @@ p{
     .skills{
         font-size: 87px;
     }
+    
+    
+    .cards{
+
+        display: block;
+    }
 }
 
 
@@ -399,12 +403,29 @@ p{
     }
 
     .aboutme {
-        font-size: 87px;
+        font-size: 50px;
     }
 
     .barre li a{
 
         font-size: 30px;
+    }
+    .clicker{
+        font-size: 120px;
+        width: 413px;
+    }
+    
+    .progressbarre{
+        width:106em;
+    }
+    .projects{
+        font-size: 50px;
+        margin-top: 40px;
+    }
+
+    .clicker {
+        font-size: 103px;
+        width: 341px;
     }
 }
 
@@ -414,7 +435,7 @@ p{
 
 
 .tapper{
-    width: 16ch;
+    width: 14.5ch;
     overflow: hidden;
     white-space: nowrap;
     animation: tapper 3s steps(35), blink .5s infinite;

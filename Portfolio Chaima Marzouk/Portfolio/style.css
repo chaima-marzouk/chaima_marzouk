@@ -12,10 +12,7 @@ body{
     position: relative;
 
 }
-.contrainer {
-    width: 90%;
-    margin: auto;
-}
+
 
 
 /*header*/
@@ -86,9 +83,10 @@ button{
 
 
 /*second navigation barre*/
-img{
+.lapimg{
     margin-left: 144px;
     width: 1546px;
+    
 }
 
 h3{
@@ -330,10 +328,41 @@ p{
 /*project*/
   .project h1{
     font-size: 35px;
-    margin-top: 123px;
+    margin-top: 123px;  
     
   }
+  #projects h1 {
+      margin-left: 42%;
+      margin-bottom: 5%;
+      margin-top: 3%;
+  }
+
 /*project*/
+
+
+/*Gif ection*/
+.container{
+     display:grid;
+     grid-template-columns: repeat( 2 , 1fr);
+     grid-template-rows: repeat( 2 , 1fr);
+     gap: 10% ;
+     width: 50%;
+     margin-left: 28%;
+}
+
+.gif { 
+    width: 200px;
+}
+.gif2 { 
+    width: 200px;
+}
+.gif3 { 
+    width: 200px;
+}
+.gif4 { 
+    width: 200px;
+}
+/*Gif ection*/
 
 
 
@@ -370,6 +399,7 @@ p{
     .tapper {
         font-size: 85px;
     }
+
 
     .maphoto{
         width: 514px;

@@ -7,6 +7,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: black;
     position: relative;
@@ -270,11 +274,11 @@ p{
   .htmlbar {
       background: pink;
       height: 32px;
-      width: 50%;
+      width: 40%;
       padding-left: 10em;
       padding-top: 8px;
       font-weight: bolder;
-      border-radius: 5px 0px 0px 5px;
+      border-radius: 5px 7px 7px 5px;
 
   }
 
@@ -291,11 +295,11 @@ p{
 .cssbar {
     background: pink;
     height: 32px;
-    width: 50%;
+    width: 36%;
     padding-left: 10em;
     padding-top: 8px;
     font-weight: bolder;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 7px 7px 5px;
 
 }
  
@@ -312,11 +316,11 @@ p{
 .designbar {
     background: pink;
     height: 32px;
-    width: 50%;
+    width: 60%;
     padding-left: 10em;
     padding-top: 8px;
     font-weight: bolder;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 7px 7px 5px;
 
 }
 
@@ -368,8 +372,10 @@ p{
 
 /*footer*/
     footer{
-        background-color: white;
+        background-color: gray;
         margin-top: 20%;
+        padding-top: 2%;
+        align-content: center;
     }
     footer p{
         color: black;
@@ -383,7 +389,7 @@ p{
 
 
 
-@media(MAX-width: 375px) { /*for phone*/
+@media(MAX-width: 378px) { /*for phone*/
     
     
     img{
@@ -434,6 +440,15 @@ p{
 
         display: block;
     }
+    .card{
+        display: flex;
+        flex-direction: row;
+    }
+    .hiddendiv{
+        margin-left: 20px;
+        font-size: 40px;
+        height: 20px;
+    }
     .container{
         display: block;
     }
@@ -445,7 +460,7 @@ p{
 
 
 
-@media(MAX-width: 768px) { /*Tablette*/
+@media(max-width: 768px) { /*Tablette*/
 
     .skills{
         font-size: 87px;
@@ -458,10 +473,6 @@ p{
     .barre li a{
 
         font-size: 30px;
-    }
-    .clicker{
-        font-size: 120px;
-        width: 413px;
     }
     
     .progressbarre{
@@ -483,7 +494,6 @@ p{
     }
 
     }
-}
 
 
 

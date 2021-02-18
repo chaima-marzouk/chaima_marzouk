@@ -348,6 +348,7 @@ p{
      gap: 10% ;
      width: 50%;
      margin-left: 28%;
+     height: 446px;
 }
 
 .gif { 
@@ -363,6 +364,18 @@ p{
     width: 200px;
 }
 /*Gif ection*/
+
+
+/*footer*/
+    footer{
+        background-color: white;
+        margin-top: 20%;
+    }
+    footer p{
+        color: black;
+    }
+/*footer*/
+
 
 
 
@@ -421,6 +434,12 @@ p{
 
         display: block;
     }
+    .container{
+        display: block;
+    }
+    .progressbarre {
+        width: 100em;
+    }
 }
 
 
@@ -456,6 +475,13 @@ p{
     .clicker {
         font-size: 103px;
         width: 341px;
+    }
+    .container{
+        width: 111%;
+        margin-left: 114%;
+        gap: 39%;
+    }
+
     }
 }
 

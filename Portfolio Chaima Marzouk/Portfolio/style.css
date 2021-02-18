@@ -136,7 +136,7 @@ h5{
 
 .facebook{
     margin-left: 9px;
-    width: 19px;
+    width: 19px; 
 }
 .instagram{
    width: 25px;
@@ -203,15 +203,13 @@ p{
 
 
 .clicker {
-    width: 288px;
+    width: 307px;
     height: 190px;
-    color: #F275A7;
+    color: rgb(242, 117, 167);
     outline: none;
     cursor: pointer;
-    font-size: 170px;
+    font-size: 149px;
     padding: 2px;
-    
-   
     }
 
     .clicker:hover{
@@ -336,7 +334,7 @@ p{
     
   }
   #projects h1 {
-      margin-left: 42%;
+      
       margin-bottom: 5%;
       margin-top: 3%;
   }
@@ -372,13 +370,18 @@ p{
 
 /*footer*/
     footer{
-        background-color: gray;
+        background-color: #BC789A;
         margin-top: 20%;
-        padding-top: 2%;
+        padding-top: 11px;
         align-content: center;
     }
     footer p{
-        color: black;
+        color: rgb(10, 6, 6 ,6);
+        margin-left: 48%;
+    }
+
+    .copyright{
+        width: 20px;
     }
 /*footer*/
 
@@ -389,113 +392,176 @@ p{
 
 
 
-@media(MAX-width: 378px) { /*for phone*/
-    
-    
-    img{
-        margin-left: -28px;
-    }
 
-    .barre li{
-
-        display: none;
-    }
-     
-    h1{
-        font-size: 168px;
-    }
-
-    h5{
-        
-        font-size: 48px;
-        font-size: 47px;
-    }
-    .logo{
-        width: 275px;
-        height: 138px;
-    }
-
-    .tapper {
-        font-size: 85px;
-    }
-
-
-    .maphoto{
-        width: 514px;
-    }
-    p {
-        font-size: 35px;
-    }
-    .button{
-        display: none;
-    }
-    
-
-    .skills{
-        font-size: 87px;
-    }
-    
-    
-    .cards{
-
-        display: block;
-    }
-    .card{
-        display: flex;
-        flex-direction: row;
-    }
-    .hiddendiv{
-        margin-left: 20px;
-        font-size: 40px;
-        height: 20px;
-    }
-    .container{
-        display: block;
-    }
-    .progressbarre {
-        width: 100em;
-    }
-}
 
 
 
 
 @media(max-width: 768px) { /*Tablette*/
 
-    .skills{
+    #skills{
         font-size: 87px;
+        margin-top: 123px;
+        width: 92%;
     }
 
     .aboutme {
-        font-size: 50px;
+        font-size: 106px;
     }
-
+    .sidebarre{
+        width: 53px;
+        height: 178px;
+    }
     .barre li a{
 
         font-size: 30px;
+    }
+    .progress{
+        padding-top: 14px;
+        font-size: 25px;
     }
     
     .progressbarre{
         width:106em;
     }
     .projects{
-        font-size: 50px;
+        font-size: 87px;
         margin-top: 40px;
+        margin-left: 30%;
     }
 
     .clicker {
         font-size: 103px;
         width: 341px;
+        margin-left: 38%;
     }
     .container{
         width: 111%;
-        margin-left: 114%;
+        margin-left: 48%;
         gap: 39%;
     }
+    .instagram{
+        width: 47px;
+    }
+    .twitter{
+        width: 37px;
+    }
+    .facebook{
+        width: 47px;
+    }
+    p{
+        margin-top: 42px;
+        font-size: 192%;
+    }
+    footer{
 
+        width: 169vh;
     }
 
 
+    }
+
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { /*for phone*/
+    
+    
+        img{
+            margin-left: -28px;
+        }
+    
+        .barre li{
+    
+            display: none;
+        }
+         
+        h1{
+            font-size: 168px;
+        }
+    
+        h5{
+            
+            font-size: 48px;
+            font-size: 47px;
+        }
+        .logo{
+            width: 275px;
+            height: 138px;
+        }
+    
+        .tapper {
+            font-size: 85px;
+        }
+    
+        p {
+            font-size: 35px;
+        }
+        .button{
+            display: none;
+        }
+        
+    
+        .skills{
+            font-size: 87px;
+        }
+        
+        
+        .cards{
+    
+            display: block;
+        }
+        .card{
+            display: flex;
+            flex-direction: row;
+        }
+        .hiddendiv{
+            margin-left: 20px;
+            font-size: 40px;
+            height: 20px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 65em;
+            
+        }
+        .progressbarre {
+            width: 100em;
+        }
+        p{
+             
+                font-size: 44px;
+                width: 200%;
+            
+        }
+        .aboutme{
+            font-size: 96px;
+            width: 110%;
+        }
+    
+        .instagram{
+            width: 47px;
+        }
+        .twitter{
+            width: 47px;
+        }
+        .facebook{
+            width: 47px;
+        }
+        .sidebarre {
+            width: 62px;
+            height: 185px;
+        }
+        .lapimg{
+            margin-left: 0;
+        }
+        footer {
+            margin-top: 55em;
+            width: 190vh;
+        }
+    }
 
 
 

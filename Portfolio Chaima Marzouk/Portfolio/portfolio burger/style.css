@@ -4,7 +4,7 @@
 body {
     background-color: black;
     justify-content: space-between;
-    background-color: black;
+    
   }
 
   .burgerlist ul{  
@@ -15,13 +15,13 @@ body {
   li.second{
 
     margin: 53px 0px;
-    color: pink;
+    color: #ffffff;
   }
   
   .burgerlist ul li{
 
     font-size: 24px;
-    color: pink;
+    color: #ffffff;
   }
   header{
 
@@ -35,9 +35,9 @@ body {
     color: pink;
    
   }
-  img {
-    width: 35%;
-    margin-top: 3%;
-}
+  img{
+    width: 134px;
+  }
+  
 
  

@@ -384,9 +384,11 @@ p{
         width: 20px;
     }
 /*footer*/
-
-img.burger{
-    color: pink;
+.burger  {
+    display: none;
+}
+.burger img {
+    display: none;
 }
 
 
@@ -399,69 +401,6 @@ img.burger{
 
 
 
-@media(max-width: 768px) { /*Tablette*/
-
-    #skills{
-        font-size: 87px;
-        margin-top: 123px;
-        width: 92%;
-    }
-
-    .aboutme {
-        font-size: 106px;
-    }
-    .sidebarre{
-        width: 53px;
-        height: 178px;
-    }
-    .barre li a{
-
-        font-size: 30px;
-    }
-    .progress{
-        padding-top: 14px;
-        font-size: 25px;
-    }
-    
-    .progressbarre{
-        width:106em;
-    }
-    .projects{
-        font-size: 87px;
-        margin-top: 40px;
-        margin-left: 30%;
-    }
-
-    .clicker {
-        font-size: 103px;
-        width: 341px;
-        margin-left: 38%;
-    }
-    .container{
-        width: 111%;
-        margin-left: 48%;
-        gap: 39%;
-    }
-    .instagram{
-        width: 47px;
-    }
-    .twitter{
-        width: 37px;
-    }
-    .facebook{
-        width: 47px;
-    }
-    p{
-        margin-top: 42px;
-        font-size: 192%;
-    }
-    footer{
-
-        width: 169vh;
-    }
-
-
-    }
 
     @media only screen 
     and (device-width : 375px) 
@@ -473,7 +412,7 @@ img.burger{
             margin-left: -28px;
         }
     
-        .barre li{
+        .barre li {
     
             display: none;
         }
@@ -563,10 +502,22 @@ img.burger{
             margin-top: 55em;
             width: 190vh;
         }
+    
+    .burger {
+        display: flex;
+        width: 12em;
+        height: 2em;
+        margin-top: 5em;
+        
+    }
+    .burger img {
+        display: flex;
+        width: 5em;
+        height: 1.8em;
     }
 
 
-
+}
 
 .tapper{
     width: 14.5ch;
@@ -587,5 +538,80 @@ img.burger{
 @keyframes blink {
     50% {
         border-color: transparent;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Tablette */
+
+    #skills {
+        font-size: 87px;
+        margin-top: 123px;
+        width: 92%;
+    }
+
+    .aboutme {
+        font-size: 106px;
+    }
+
+    .sidebarre {
+        width: 53px;
+        height: 178px;
+    }
+
+    .barre li a {
+
+        font-size: 30px;
+    }
+
+    .progress {
+        padding-top: 14px;
+        font-size: 25px;
+    }
+
+    .progressbarre {
+        width: 106em;
+    }
+
+    .projects {
+        font-size: 87px;
+        margin-top: 40px;
+        margin-left: 30%;
+    }
+
+    .clicker {
+        font-size: 103px;
+        width: 341px;
+        margin-left: 38%;
+    }
+
+    .container {
+        width: 111%;
+        margin-left: 48%;
+        gap: 39%;
+    }
+
+    .instagram {
+        width: 47px;
+    }
+
+    .twitter {
+        width: 37px;
+    }
+
+    .facebook {
+        width: 47px;
+    }
+
+    p {
+        margin-top: 42px;
+        font-size: 192%;
+    }
+
+    footer {
+
+        width: 169vh;
     }
 }

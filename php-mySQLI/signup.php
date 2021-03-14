@@ -1,89 +1,128 @@
-<?php
-
-include_once('database.php');
-if (isset($_POST['submit'])) 
-{
-
-$name = $_POST['fullname'];
-$userId = $_POST['userId'];
-$email = $_POST['Email'];
-$password = $_POST['Password'];
-
-
-// if($rowcount > 1){
-    
-//     $signin = mysqli_query($link, $query);
-//     $rowcount = mysqli_num_rows($signin);
-//     printf("username already taken");
-// }
-
-// else {
-// $check = "INSERT INTO `sighnin`( `name`, `email`, `username`, `password`)";
-// $check .= "VALUES ('$name','$email','$userId','$password')";
-// $resultat .= mysqli_query($link,$check);
-
-// echo "inscription successfull";
-// }
-
-
-    $sql_u = "SELECT * FROM sighnin WHERE username='$userId'";
-    $sql_e = "SELECT * FROM sighnin WHERE Email='$email'";
-    $res_u = mysqli_query($link, $sql_u);
-    $res_e = mysqli_query($link, $sql_e);
-
-    if (mysqli_num_rows($res_u) > 0) {
-        // echo "Username already taken";
-        // $name_error = "Username already taken";
-        // $_SESSION['name_error'] = $name_error;
-        header('Location: signup.php?error=alreadytaken');
-    } 
-    if (mysqli_num_rows($res_e) > 0) {
-        echo "Email already taken";
-        // $email_error = "Email already taken";
-        // $_SESSION['email_error'] = $email_error;
-        header('Location: signup.php?error=alreadytaken');
-    }
-    else {
-        if (!empty($_POST['UserName']) && !empty($_POST['Email']) && !empty($_POST['userId']) && !empty($_POST['Password'])) {
-            $query = "INSERT INTO `sighnin` (name, email, username, password)";
-            $query .= " VALUES ('$name', '$Email', '$userId', '$password')";
-            $results = mysqli_query($link, $query);
-            header('Location: index.php');
-        }
-    }
-    
-}
-
-  
-?>
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Login V6</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
 <body>
-<form  method="POST">
-<?php
-if(isset($_GET['error'])){
-    echo $_GET['error'];
-}
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-85 p-b-20">
+				<form class="login100-form validate-form" action="signupcheck.php" method="POST">
+					<?php
+                        if(isset($_GET['error'])){
+                        echo $_GET['error'];
+                    }
 
-?>
-        <input type="text" placeholder="entre your email" name="Email">
-        <input type="text" placeholder="fullname" name="fullname">
-        <input type="text" placeholder="userId" name="userId">
-        <input type="password" placeholder="entre your password" name="Password"> 
-        <button type="submit" name="submit">submit</button>  
-</form>
+                    ?>
+					<span class="login100-form-title p-b-70">
+						Welcome
+					</span>
+					<span class="login100-form-avatar">
+						<img src="images/aa.jpg" alt="AVATAR">
+					</span>
+
+					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
+						<input class="input100" type="text" name="email">
+						<span class="focus-input100" data-placeholder="Email"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
+						<input class="input100" type="text"  name="name">
+						<span class="focus-input100" data-placeholder="Full Name"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
+						<input class="input100" type="text"  name="username">
+						<span class="focus-input100" data-placeholder="Username"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
+						<input class="input100" type="password"  name="password">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit" name="submit">
+							Sign up
+						</button>
+					</div>
+
+					<ul class="login-more p-t-190">
+						<!-- <li class="m-b-8">
+							<span class="txt1">
+								Forgot
+							</span>
+
+							<a href="#" class="txt2">
+								Username / Password?
+							</a>
+						</li> -->
+
+						<li>
+							<span class="txt1">
+								 Have an account ?
+							</span>
+
+							<a href="#" class="txt2">
+								Sign in
+							</a>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
 </body>
 </html>
+
+
+
+
+
+

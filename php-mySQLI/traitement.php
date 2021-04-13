@@ -5,10 +5,12 @@ include_once('database.php');
 // $utilisateur = $_POST['utilisateur'];
 // $contenu_message = $_POST['contenu_message'];
 // $insert = "INSERT INTO `messages`( utilisateur, contenu_message) VALUES ('$utilisateur','$contenu_message')";
+session_start();
+
+$name_session = $_SESSION['utilisateur'];
 
 
-
-$insert = ("INSERT INTO messages(utilisateur, contenu_message) VALUES ('" . $_POST['utilisateur'] . "','" . $_POST['message'] . "')");
+$insert = ("INSERT INTO messages(utilisateur, contenu_message) VALUES ('" . $name_session . "','" . $_POST['message'] . "')");
 $query =  mysqli_query($link,$insert);
 header('location:index.php');
 

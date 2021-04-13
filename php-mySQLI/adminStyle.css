@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    color: #ffffff;
+    background-size: 100%;
+    background-color: black;
+    
+}
+th {
+    border: 6px solid #106e7c;
+    text-align: left;
+    padding: 17px;
+}
+table {
+    margin: 6% 2%;
+    padding: -1%;
+    width: 96%;
+}
+td{
+    border: 1px solid #ca0eca;
+}

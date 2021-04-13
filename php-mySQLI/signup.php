@@ -33,12 +33,7 @@
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-85 p-b-20">
 				<form class="login100-form validate-form" action="signupcheck.php" method="POST">
-					<?php
-                        if(isset($_GET['error'])){
-                        echo $_GET['error'];
-                    }
-
-                    ?>
+					
 					<span class="login100-form-title p-b-70">
 						Welcome
 					</span>
@@ -48,8 +43,14 @@
 
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
 						<input class="input100" type="text" name="email">
-						<span class="focus-input100" data-placeholder="Email"></span>
+						<span class="focus-input100" ></span>
 					</div>
+					<?php
+                        if(isset($_GET['error'])){
+                        echo $_GET['error'];
+                    }
+
+                    ?>
 
 					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
 						<input class="input100" type="text"  name="name">
@@ -73,22 +74,13 @@
 					</div>
 
 					<ul class="login-more p-t-190">
-						<!-- <li class="m-b-8">
-							<span class="txt1">
-								Forgot
-							</span>
-
-							<a href="#" class="txt2">
-								Username / Password?
-							</a>
-						</li> -->
-
+				
 						<li>
 							<span class="txt1">
 								 Have an account ?
 							</span>
 
-							<a href="#" class="txt2">
+							<a href="login.php" class="txt2">
 								Sign in
 							</a>
 						</li>
@@ -120,9 +112,6 @@
 
 </body>
 </html>
-
-
-
 
 
 

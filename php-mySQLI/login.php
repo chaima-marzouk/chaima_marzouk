@@ -1,3 +1,9 @@
+<?php
+	session_start();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,9 +38,8 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-85 p-b-20">
-				<form class="login100-form validate-form" action="logincheck.php" method="GET">
+				<form class="login100-form validate-form" method="GET">
 					<span class="login100-form-title p-b-70">
-						Welcome
 					</span>
 					<span class="login100-form-avatar">
 						<img src="images/aa.jpg" alt="AVATAR">
@@ -49,6 +54,35 @@
 						<input class="input100" type="password" name="password">
 						<span class="focus-input100" data-placeholder="Password"></span>
 					</div>
+					<?php
+					include_once('database.php');
+					if (isset($_GET['submit'])) {
+   
+
+						   $email = $_GET["email"];
+						   $password = $_GET["password"];
+						   $query = "SELECT * FROM sighnin  WHERE email='$email' && password ='$password'";
+						   $signin = mysqli_query($link, $query);
+						   $row = mysqli_fetch_array($signin, MYSQLI_ASSOC);
+						   $rowcount = mysqli_num_rows($signin);
+					   
+						   if ($rowcount > 0) {
+							if($email=='admin@gmail.com' && $password=='admin'){
+								header('location:admin.php');
+								die();
+							} else{
+								$_SESSION['utilisateur'] = $row['name'];
+							header('location: index.php');
+							}
+
+						   }
+					   
+						   else  {
+							   echo "Your email or password is wrong , please try again .";
+						   }
+
+					   }
+					   ?>
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" name="submit" type="submit">
@@ -57,15 +91,8 @@
 					</div>
 
 					<ul class="login-more p-t-190">
-						<!-- <li class="m-b-8">
-							<span class="txt1">
-								Forgot
-							</span>
-
-							<a href="#" class="txt2">
-								Username / Password?
-							</a>
-						</li> -->
+						
+						
 
 						<li>
 							<span class="txt1">

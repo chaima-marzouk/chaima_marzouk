@@ -5,10 +5,11 @@
 }
 body{
     font-family: 'arial';
-    color:yellow;
+    color: #00dbff;
     font-size: 15px;
     line-height: 1.5em;
-    background:black;
+    background-image: url(chatb.jpg);
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,24 +24,23 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-color: yellow;
-    border-style: solid;
-    margin-top: 1em;
+    margin-top: 15em;
     height: 5vh;
 }
 
 .messages{
     display: flex;
     align-items:flex-end;
-    border-color: yellow;
+    border-color: #ca0eca;
     border-style: solid;
     margin-top: 1em;
     height: 50vh;
     padding: 2em;
+    
 }
 
 .message{
-    margin-top: .5em;
+    margin-top: 1.5em;
     list-style: none;
 }
 
@@ -58,4 +58,20 @@ main{
 
 #message {
     width: 55%;
+}
+input.envoyer {
+    background: #f44dff;
+    color: #000000;
+    border-radius: 7px;
+    width: 75px;
+}
+
+.logout{
+
+    background: #f44dff;
+    color: #000000;
+    margin-left: 93%;
+    border-radius: 7px;
+    width: 75px;
+
 }

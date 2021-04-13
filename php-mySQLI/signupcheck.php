@@ -18,15 +18,13 @@ $password = $_POST['password'];
     $res_e = mysqli_query($link, $sql_e);
 
     if (mysqli_num_rows($res_u) > 0) {
-        // echo "Username already taken";
-        // $name_error = "Username already taken";
+        echo "Username already taken";
+        $name_error = "Username already taken";
         // $_SESSION['name_error'] = $name_error;
         header('Location: signup.php?error=alreadytaken');
     } 
     else if (mysqli_num_rows($res_e) > 0) {
         echo "Email already taken";
-        // $email_error = "Email already taken";
-        // $_SESSION['email_error'] = $email_error;
         header('Location: signup.php?error=alreadytaken');
     }
     else {
